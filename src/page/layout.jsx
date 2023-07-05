@@ -17,7 +17,7 @@ const Layout = () => {
 
   return (
     <>
-      <header className=' relative z-10'>
+      <header className=' relative z-20'>
         <nav className='fixed bg-black w-full shadow-xl'>
           <div className='md:flex items-center justify-between py-4 px-8'>
             <div className='flex justify-between items-center'>
