@@ -7,6 +7,7 @@ import Univ from '../asset/img/univ.jpg';
 import Tmr from '../asset/img/tomer2.jpg';
 import Ig from '../asset/icon/instagram.png';
 import Yt from '../asset/icon/youtube.png';
+import Cover from '../asset/img/cover.png';
 import Background from '../asset/img/background.jpg';
 
 
@@ -14,7 +15,11 @@ const home = () => {
   return (
     <div className='grid grid-cols-1 pt-20'>
       <div>
-        <Carousel className='shadow-xl md:h-[50rem] h-1/6'>
+        <Carousel 
+        className='shadow-xl md:h-1/6 h-[20rem]'
+        loop='true'
+        autoplay='true'
+        >
           <div className='relative h-full w-full'>
             <img
               src={Ldk}
@@ -100,7 +105,7 @@ const home = () => {
                 <p>
                   Kırklareli
                 </p>
-                Üniversitesi
+                  Üniversitesi
               </h1>
               <h2 className='py-10 md:text-left text-center text-lg text-white'>
                 The Kırklareli University was founded at 2007 under the administration of the Trakya University Rectorate Enver Duran. The university is based on a strong background of the Faculty of Engineering, built at 1992.
@@ -108,7 +113,7 @@ const home = () => {
                 The university is a member of the Balkan Universities Network.
               </h2>
               <div className='mx-auto md:ml-0'>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-10  rounded">
+                <button className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white font-bold py-5 px-10  rounded">
                   <a href='https://www.klu.edu.tr' className='text-3xl'>
                     Visit Site
                   </a>
@@ -129,7 +134,7 @@ const home = () => {
                 <p>
                   Tömer
                 </p>
-                Kırklareli Üniversitesi
+                  Kırklareli Üniversitesi
               </h1>
               <h2 className='py-10 md:text-right text-center text-lg text-white'>
                 The Kırklareli University was founded at 2007 under the administration of the Trakya University Rectorate Enver Duran. The university is based on a strong background of the Faculty of Engineering, built at 1992.
@@ -137,7 +142,7 @@ const home = () => {
                 The university is a member of the Balkan Universities Network.
               </h2>
               <div className='mx-auto md:mr-0'>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-10  rounded">
+                <button className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white font-bold py-5 px-10  rounded">
                   <a href='https://tomer.klu.edu.tr/' className='text-3xl'>
                     Visit Site
                   </a>
@@ -155,7 +160,28 @@ const home = () => {
           backgroundImage: `url(${Background})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"
-        }}></div>
+        }}>
+          <div className='cols col-span-2 justify-center flex gap-10'>
+            <div className='shadow-2xl'>
+              <img src={Cover} alt="" />
+            </div>
+            <div>
+              <h1 className='text-9xl font-bold text-white'>
+                Guide Book
+              </h1>
+              <h2 className='text-5xl text-white pt-10'>
+                Download here
+              </h2>
+              <div className='pt-10'>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-10  rounded">
+                  <a href='#' className='text-3xl'>
+                    Download
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* content section 3*/}
         {/* footer section */}
         <footer className='flex justify-between place-items-center bg-[#11293F] py-10 px-20'>

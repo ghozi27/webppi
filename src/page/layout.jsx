@@ -28,7 +28,7 @@ const Layout = () => {
                   }
                 </div>
               </div>
-              <div className=''>
+              <div>
                 <ul
                   className={`md:flex md:items-center absolute md:static md:z-auto 
                               z-[-1] left-0 md:pl-0 pl-16 bg-black w-full gap-5 text-white 
